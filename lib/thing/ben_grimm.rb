@@ -3,6 +3,8 @@ module Thing
     def initialize
       @runs = {}
       @runners = {}
+
+      puts "\nIt's Clobberin' Time...\n\n"
     end
 
     # TODO: We should handle existing IDs so new workers can come up mid run.

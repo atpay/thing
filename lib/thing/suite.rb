@@ -4,6 +4,7 @@ module Thing
       @state = map_suite load(suite)
     end
 
+    # allow random and sequential
     def next_test
       @state.delete_if { |test| test[1] == 0 }
 
@@ -15,7 +16,6 @@ module Thing
       end
     end
 
-    # allow random and sequential
 
     private
 
